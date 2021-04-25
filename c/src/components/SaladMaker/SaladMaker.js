@@ -19,7 +19,7 @@ export default function SaladMaker() {
   const classes = useStyles();
   const [salad, setSalad] = useReducer(reducer, []);
   return(
-    <>
+   <SaladContext.Provider value={{ salad, setSalad }}>
       <h1 className={classes.wrapper}>
         <span role="img" aria-label="salad">🥗 </span>
           Build Your Custom Salad!
@@ -28,6 +28,6 @@ export default function SaladMaker() {
       </h1>
       <SaladBuilder />
       <SaladSummary />
-    </>
+      </SaladContext.Provider>
   )
 }
