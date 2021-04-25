@@ -4,10 +4,10 @@ import SaladMaker from '../SaladMaker/SaladMaker';
 import UserContext from '../User/User';
 
 const user = {
-  name: 'Kwame',
+  name: '',
   favorites: [
-    'avocado',
-    'carrot'
+    '',
+    ''
   ]
 }
 
