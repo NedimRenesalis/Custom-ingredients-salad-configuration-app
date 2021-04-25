@@ -1,5 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import SaladBuilder from '../SaladBuilder/SaladBuilder';
 
 const useStyles = createUseStyles({
   wrapper: {
@@ -17,6 +18,7 @@ export default function SaladMaker() {
           Avoid trans-fat.
           <span role="img" aria-label="salad"> 🥗</span>
       </h1>
+      <SaladBuilder />
     </>
   )
 }
