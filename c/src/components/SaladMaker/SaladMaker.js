@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import { createUseStyles } from 'react-jss';
 import SaladBuilder from '../SaladBuilder/SaladBuilder';
 import SaladSummary from '../SaladSummary/SaladSummary';
@@ -8,6 +8,8 @@ const useStyles = createUseStyles({
     textAlign: 'center',
   }
 });
+
+export const SaladContext = createContext();
 
 export default function SaladMaker() {
   const classes = useStyles();
